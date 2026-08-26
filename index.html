@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#091218">
+  <title>Főoldal • HomeRP ORFK</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">H</span>
+    <span><b>HomeRP</b><small>Országos Rendőr-főkapitányság</small></span>
+  </a>
+  <button class="nav-toggle" aria-label="Menü" onclick="toggleNav()">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">Főoldal</a>
+    <a href="buntetesek.html">BTK / Szankciók</a>
+    <a href="szabalyzat.html">Szabályzat</a>
+    <a href="rolunk.html">Szervezet</a>
+    <a class="nav-login" href="belepes.html">Állományi belépés</a>
+  </nav>
+</header>
+
+
+<main>
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">HOME ROLEPLAY • HOME ROLEPLAY</span>
+        <h1>Szolgálunk és védünk.<br><span>Professzionális RP keretek között.</span></h1>
+        <p class="lead">A HomeRP Rendőrség hivatalos információs felülete: közlemények, szolgálati tájékoztatók, szankciójegyzék, állományi információk és belső rendszerkapcsolatok egy helyen.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="buntetesek.html">Szankciójegyzék megnyitása</a>
+          <a class="btn ghost" href="szabalyzat.html">Szolgálati szabályzat</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="status-line"><span class="dot online"></span><b>Rendszerállapot</b><span>ONLINE</span></div>
+        <div class="metric-grid">
+          <div><b id="offenceCount">0</b><span>nyilvántartott tétel</span></div>
+          <div><b>24/7</b><span>ügyeleti elérhetőség</span></div>
+          <div><b>112</b><span>segélyhívó</span></div>
+          <div><b>HomeRP</b><span>szolgálati terület</span></div>
+        </div>
+        <p class="muted">A portál nyilvános része tájékoztató jellegű. Az MDC és a személyzeti funkciók kizárólag jogosult állomány számára érhetők el.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head"><span class="eyebrow">GYORS ELÉRÉS</span><h2>Rendészeti információk</h2></div>
+    <div class="feature-grid">
+      <a class="feature-card" href="buntetesek.html"><span>01</span><h3>BTK / Szankciók</h3><p>Kereshető, kategorizált teljes intézkedési és büntetési jegyzék forintosított HomeRP-tételekkel.</p></a>
+      <a class="feature-card" href="szabalyzat.html"><span>02</span><h3>Szolgálati szabályzat</h3><p>Intézkedési alapelvek, rádiózás, üldözés, kényszerítő eszközök, dokumentáció és szolgálati fegyelem.</p></a>
+      <a class="feature-card" href="rolunk.html"><span>03</span><h3>Szervezeti felépítés</h3><p>Rendfokozatok, szakterületek, vezetési lánc, feladatkörök és állományi követelmények.</p></a>
+      <a class="feature-card" href="belepes.html"><span>04</span><h3>Állományi rendszer</h3><p>Belépési felület az MDC, belső jelentések és jogosultsághoz kötött szolgálati funkciók számára.</p></a>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">KÖZLEMÉNYEK</span><h2>Aktuális szolgálati tájékoztatók</h2></div>
+      <div class="news-grid">
+        <article class="news-card"><small>ÁLLOMÁNYI TÁJÉKOZTATÓ</small><h3>Egységes intézkedési dokumentáció</h3><p>Minden kiemelt intézkedésnél rögzíteni kell az érintetteket, a jogalapot, a lefoglalt tárgyakat, a kiszabott szankciót és a releváns bizonyítékokat.</p><time>2026.08.26.</time></article>
+        <article class="news-card"><small>KÖZLEKEDÉSRENDÉSZET</small><h3>Speedpol / Roadpol táblázat</h3><p>A sebességtúllépések zónánként külön tételként kereshetők. A kiemelt kategóriák vezetői engedély bevonását is indokolhatják.</p><time>2026.08.26.</time></article>
+        <article class="news-card"><small>HOME RP</small><h3>Forintosított szankciórendszer</h3><p>A korábbi dolláros tételek a HomeRP gazdaságához igazított, kerekített forintértékeket kaptak; a fogdaidők változatlan RP-időt jelentenek.</p><time>2026.08.26.</time></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap split">
+    <div>
+      <span class="eyebrow">KÖZÉRDEKŰ</span><h2>Vészhelyzetben</h2>
+      <p>Azonnali életveszély, folyamatban lévő erőszakos cselekmény, súlyos közlekedési baleset vagy közbiztonságot veszélyeztető esemény esetén a megfelelő segélyhívó csatornát kell használni.</p>
+    </div>
+    <div class="emergency-card"><b>112</b><span>Általános segélyhívó</span><p>Játékbeli sürgősségi helyzetek RP-kezeléséhez.</p></div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div>
+    <strong>HomeRP • Országos Rendőr-főkapitányság</strong>
+    <p>HomeRP rendészeti és állományi információs portál.</p>
+  </div>
+  <div class="footer-links">
+    <a href="szabalyzat.html">Szolgálati szabályzat</a>
+    <a href="buntetesek.html">Szankciójegyzék</a>
+    <a href="belepes.html">MDC / belépés</a>
+  </div>
+  <small>Roleplay célú tartalom. A szankciók a HomeRP játékbeli gazdaságához vannak igazítva.</small>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

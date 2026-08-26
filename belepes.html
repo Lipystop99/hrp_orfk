@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#091218">
+  <title>Állományi belépés • HomeRP ORFK</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">H</span>
+    <span><b>HomeRP</b><small>Országos Rendőr-főkapitányság</small></span>
+  </a>
+  <button class="nav-toggle" aria-label="Menü" onclick="toggleNav()">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">Főoldal</a>
+    <a href="buntetesek.html">BTK / Szankciók</a>
+    <a href="szabalyzat.html">Szabályzat</a>
+    <a href="rolunk.html">Szervezet</a>
+    <a class="nav-login" href="belepes.html">Állományi belépés</a>
+  </nav>
+</header>
+
+
+<main class="login-page">
+  <section class="login-card panel">
+    <div class="login-logo"><span>H</span><div><b>HomeRP ORFK</b><small>Állományi rendszer</small></div></div>
+    <span class="eyebrow">BIZTONSÁGOS HOZZÁFÉRÉS</span>
+    <h1>Személyzeti belépés</h1>
+    <p class="muted">Az oldal jelenleg frontend-demó. Éles használathoz szerveroldali hitelesítés és jogosultságkezelés szükséges.</p>
+    <form onsubmit="demoLogin(event)">
+      <label>Szolgálati azonosító<input class="input" id="loginId" autocomplete="username" placeholder="pl. ORFK-0127"></label>
+      <label>Jelszó<input class="input" id="loginPass" type="password" autocomplete="current-password" placeholder="••••••••"></label>
+      <div class="form-row"><label class="checkbox"><input type="checkbox"> Emlékezzen erre az eszközre</label><a href="#" onclick="return false">Hozzáférési probléma</a></div>
+      <button class="btn primary full">Belépés az MDC-be</button>
+    </form>
+    <div id="loginNotice" class="notice hidden"></div>
+    <div class="security-note"><b>Biztonsági figyelmeztetés</b><p>Szolgálati belépési adatot más személynek átadni tilos. Jogosulatlan hozzáférési kísérletet a rendszer naplózhat.</p></div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div>
+    <strong>HomeRP • Országos Rendőr-főkapitányság</strong>
+    <p>HomeRP rendészeti és állományi információs portál.</p>
+  </div>
+  <div class="footer-links">
+    <a href="szabalyzat.html">Szolgálati szabályzat</a>
+    <a href="buntetesek.html">Szankciójegyzék</a>
+    <a href="belepes.html">MDC / belépés</a>
+  </div>
+  <small>Roleplay célú tartalom. A szankciók a HomeRP játékbeli gazdaságához vannak igazítva.</small>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
