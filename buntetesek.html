@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#091218">
+  <title>BTK / Szankciók • HomeRP ORFK</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">H</span>
+    <span><b>HomeRP</b><small>Országos Rendőr-főkapitányság</small></span>
+  </a>
+  <button class="nav-toggle" aria-label="Menü" onclick="toggleNav()">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">Főoldal</a>
+    <a href="buntetesek.html">BTK / Szankciók</a>
+    <a href="szabalyzat.html">Szabályzat</a>
+    <a href="rolunk.html">Szervezet</a>
+    <a class="nav-login" href="belepes.html">Állományi belépés</a>
+  </nav>
+</header>
+
+
+<main class="wrap page-space">
+  <section class="page-intro">
+    <span class="eyebrow">MDC • INTÉZKEDÉSI SEGÉDLET</span>
+    <h1>BTK / Szankciójegyzék</h1>
+    <p>A feltöltött teljes jogsértési lista HomeRP-gazdaságra átszámított, kereshető változata. A forintos összegek RP-egyensúly szerint normalizáltak, nem devizaárfolyam alapján készültek.</p>
+  </section>
+
+  <section class="law-layout">
+    <div class="law-main panel">
+      <div class="law-tools">
+        <input id="lawSearch" class="input" type="search" placeholder="Keresés §, megnevezés, rövidítés vagy leírás alapján…">
+        <select id="lawCategory" class="input"><option value="ALL">Minden kategória</option></select>
+      </div>
+      <div class="law-summarybar">
+        <span><b id="visibleCount">0</b> találat</span>
+        <span>Kattints egy tételre az intézkedési jegyzékhez.</span>
+      </div>
+      <div id="lawList" class="law-list"></div>
+    </div>
+
+    <aside class="docket panel">
+      <div class="panel-title"><div><small>AKTÍV INTÉZKEDÉS</small><h2>Vádjegyzék</h2></div><button class="text-danger" onclick="clearDocket()">Törlés</button></div>
+      <div id="docketList" class="docket-list"><div class="empty">Nincs kiválasztott tétel.</div></div>
+      <div class="totals">
+        <div><span>Bírság minimum</span><b id="fineMinTotal">0 Ft</b></div>
+        <div><span>Bírság maximum</span><b id="fineMaxTotal">0 Ft</b></div>
+        <div><span>Fogda minimum</span><b id="jailMinTotal">0 perc</b></div>
+        <div><span>Fogda maximum</span><b id="jailMaxTotal">0 perc</b></div>
+      </div>
+      <button class="btn primary full" onclick="copyDocket()">MDC adatlap másolása</button>
+    </aside>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div>
+    <strong>HomeRP • Országos Rendőr-főkapitányság</strong>
+    <p>OGR City rendészeti és állományi információs portál.</p>
+  </div>
+  <div class="footer-links">
+    <a href="szabalyzat.html">Szolgálati szabályzat</a>
+    <a href="buntetesek.html">Szankciójegyzék</a>
+    <a href="belepes.html">MDC / belépés</a>
+  </div>
+  <small>Roleplay célú tartalom. A szankciók a HomeRP játékbeli gazdaságához vannak igazítva.</small>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
