@@ -1,12 +1,22 @@
-HomeRP ORFK weboldal — valós magyar rendőrségi mintára frissített változat
+HomeRP ORFK weboldal
+=====================
 
-Minden fájl egy könyvtárszinten marad, almappa nélkül.
+Fájlok: minden állomány egyetlen szinten található, almappa nélkül.
 
-Valós alapok:
-- ORFK szervezeti struktúra (4 főigazgatóság)
-- BRFK + 19 vármegyei rendőr-főkapitányság
-- 154 rendőrkapitányság és 21 határrendészeti kirendeltség a rendőrségi karrierportál nyilvános adata alapján
-- 2012. évi C. törvény (Btk.) valós paragrafushivatkozásai
-- 1/1975. (II. 5.) KPM–BM rendelet (KRESZ) valós hivatkozásai
+Tartalom:
+- index.html: teljes nyilvános főoldal
+- buntetesek.html: teljes, kereshető szankciójegyzék
+- szabalyzat.html: részletes szolgálati szabályzat
+- rolunk.html: szervezet, feladatkörök, rendfokozati logika
+- belepes.html: állományi belépés frontend-demó
+- data.js: 390 feldolgozott jogsértési/szankciós tétel
+- app.js: keresés, kategória, vádjegyzék, összesítés, másolás, mobil menü
+- styles.css: HomeRP arculat
 
-Fontos: a Ft-ban és „fogda percben” megadott szankciók HomeRP-játékszabályok, nem valódi magyar büntetési tételek.
+Forintosítás:
+A forrásban szereplő dolláros összegek nem valós USD/HUF devizaárfolyammal lettek átváltva.
+A közlekedési tételek kisebb, a súlyosabb bűncselekmények magasabb HomeRP-szorzót kaptak,
+majd az összegek 5 000 Ft-os lépcsőre lettek kerekítve. Ez az RP-gazdasághoz igazodik.
+
+Belépés:
+A belepes.html kizárólag frontend-demó. Valódi felhasználókezeléshez backend szükséges.
